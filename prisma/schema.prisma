@@ -1,0 +1,27 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"  // Change this if using another database
+  url      = env("DATABASE_URL")
+}
+
+model EmailIngestionConfig {
+  id             String  @id @default(uuid())
+  emailAddress   String
+  connectionType String
+  username       String?
+  password       String?
+  host           String?
+  createdAt      DateTime @default(now())
+}
+
+model EmailAttachment {
+  id                 String  @id @default(uuid())
+  fromAddress        String
+  dateReceived       DateTime
+  subject            String
+  attachmentFileName String
+  filePath           String
+}
