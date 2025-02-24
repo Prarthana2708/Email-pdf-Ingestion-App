@@ -81,11 +81,6 @@ If you encounter any issues, feel free to open an issue in the repository. Contr
 
 ---
 
-## 📺 Video Demo
-(Include a link to a video explanation here)
-
----
-
 ## 🌟 Credits
 Developed as part of a project exploring email automation and data ingestion. 🚀
 
